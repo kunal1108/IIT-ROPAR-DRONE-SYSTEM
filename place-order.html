@@ -1,0 +1,26 @@
+<head>
+    <link rel="stylesheet" href="place-order.css">
+</head>
+<section>
+
+    <h2>Place an Order</h2>
+    <form action="order.php" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" required></textarea><br>
+        <label for="medical-supplies">Medical Supplies:</label><br>
+        <select id="medical-supplies" name="medical-supplies" required>
+            <option value="vaccines">Vaccines</option>
+            <option value="medications">First-aid</option>
+            <option value="normal-supply">normal supply</option>
+            <option value="blood-samples">Advanced supply</option>
+            <!-- Add more options as needed -->
+        </select><br>
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" required><br>
+        <input type="submit" value="Place Order">
+    </form>
+</section>

@@ -1,0 +1,68 @@
+/* Styles for Services page */
+/* Styles for Services page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+section {
+    flex: 0 1 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Adding color to service types */
+h3:first-child {
+    color: #FF6347; /* First Aid - Tomato */
+}
+
+h3:nth-child(2) {
+    color: #4682B4; /* Normal Supply - Steel Blue */
+}
+
+h3:nth-child(3) {
+    color: #8A2BE2; /* Advanced Supply - Blue Violet */
+}
+
+section:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
